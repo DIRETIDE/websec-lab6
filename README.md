@@ -1,6 +1,6 @@
 Пользователи:
 
-james_kirk - 25000 - kobayashi_maru
+james_kirk - 25000 - kobayashi_maru <p>
 mr_spock - 99000 - 0nLyL0g!c
 leonard_mccoy - 45000 - hesDEADjim!
 nyota_uhura - 39000 - StarShine
