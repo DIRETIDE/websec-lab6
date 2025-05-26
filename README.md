@@ -1,44 +1,111 @@
-# SQL инъекция
+Пользователи:
 
-Данный документ описывает лабораторную работу по изучению SQL-инъекций. В рамках работы будут анализировать уязвимости веб-приложения, развернутого в Docker-контейнере, и применение методов эксплуатации уязвимостей.
+james_kirk - 25000 - kobayashi_maru
+mr_spock - 99000 - 0nLyL0g!c
+leonard_mccoy - 45000 - hesDEADjim!
+nyota_uhura - 39000 - StarShine
+montgomery_scot - 1250 - ScottyDoesntKnow
+hiraku_sulu - 3500 - parking-break-on
+pavel_chekov - 2500 - 99victorvictor2
+john_harrison@%
 
-## Цели работы:
+Версия mySQL - 8.3.0
 
-- Определение уязвимых SQL-запросов.
-- Проведение атак с использованием SQL-инъекций.
-- Получение скрытых данных из базы данных.
-- Анализ методов защиты от атак.
+Текущий: john_harrison@%
 
-## Ресурс
+Имена таблиц: 
+ADMINISTRABLE_ROLE_AUTHORIZATIONS
+APPLICABLE_ROLES
+CHARACTER_SETS
+CHECK_CONSTRAINTS
+COLLATIONS
+COLLATION_CHARACTER_SET_APPLICABILITY
+COLUMNS
+COLUMNS_EXTENSIONS
+COLUMN_PRIVILEGES
+COLUMN_STATISTICS
+ENABLED_ROLES
+ENGINES
+EVENTS
+FILES
+INNODB_BUFFER_PAGE
+INNODB_BUFFER_PAGE_LRU
+INNODB_BUFFER_POOL_STATS
+INNODB_CACHED_INDEXES
+INNODB_CMP
+INNODB_CMPMEM
+INNODB_CMPMEM_RESET
+INNODB_CMP_PER_INDEX
+INNODB_CMP_PER_INDEX_RESET
+INNODB_CMP_RESET
+INNODB_COLUMNS
+INNODB_DATAFILES
+INNODB_FIELDS
+INNODB_FOREIGN
+INNODB_FOREIGN_COLS
+INNODB_FT_BEING_DELETED
+INNODB_FT_CONFIG
+INNODB_FT_DEFAULT_STOPWORD
+INNODB_FT_DELETED
+INNODB_FT_INDEX_CACHE
+INNODB_FT_INDEX_TABLE
+INNODB_INDEXES
+INNODB_METRICS
+INNODB_SESSION_TEMP_TABLESPAC
+INNODB_TABLES
+INNODB_TABLESPACES
+INNODB_TABLESPACES_BRIEF
+INNODB_TABLESTATS
+INNODB_TEMP_TABLE_INFO
+INNODB_TRX
+INNODB_VIRTUAL
+KEYWORDS
+KEY_COLUMN_USAGE
+OPTIMIZER_TRACE
+PARAMETERS
+PARTITIONS
+PLUGINS
+PROCESSLIST
+PROFILING
+REFERENTIAL_CONSTRAINTS
+RESOURCE_GROUPS
+ROLE_COLUMN_GRANTS
+ROLE_ROUTINE_GRANTS
+ROLE_TABLE_GRANTS
+ROUTINES
+SCHEMATA
+SCHEMATA_EXTENSIONS
+SCHEMA_PRIVILEGES
+STATISTICS
+ST_GEOMETRY_COLUMNS
+ST_SPATIAL_REFERENCE_SYSTEMS
+ST_UNITS_OF_MEASURE
+TABLES
+TABLESPACES
+TABLESPACES_EXTENSIONS
+TABLES_EXTENSIONS
+TABLE_CONSTRAINTS
+TABLE_CONSTRAINTS_EXTENSIONS
+TABLE_PRIVILEGES
+TRIGGERS
+USER_ATTRIBUTES
+USER_PRIVILEGES
+VIEWS
+VIEW_ROUTINE_USAGE
+VIEW_TABLE_USAGE
+users
+global_status
+global_variables
+persisted_variables
+processlist
+session_account_connect_attrs
+session_status
+session_variables
+variables_info
 
-[Сайт](http://92.63.179.34:8080/)
-
-## Задания
-
-1. Достать всех пользователей и их зарплаты
-
-2. Узнать версию MySQL
-
-3. Узнать пароли всех пользователей
-
-4. Определить текущего пользователя базы данных
-
-5. Извлечь имена таблиц из схемы базы данных
-
-6. Получить список столбцов users таблицы
-
-## Сдача
-
-Создайте форк репозитория `websec-lab6-{ваша_фамилия}` в организацию `41ISR`, работайте в ветке `dev`. Удалите содержимое файла `README.md` и работайте в нем же. По завершению работы сделайте пулл реквест `dev` => `main` и отметьте  [меня](https://github.com/ktkv419) ревьювером
-
-## Credentials
-
-Логин и пароль для получения зарплаты кирка
-
-- <code>username</code>: <code>james_kirk</code>
-- <code>password</code>: <code>kobayashi_maru</code>
-
-## Подсказки
-
-- [PayloadAllTheThigs](https://swisskyrepo.github.io/PayloadsAllTheThings/)
-- [SQL Injection List](https://github.com/payloadbox/sql-injection-payload-list)
+Столбцы таблицы users:
+username
+first_name
+last_name
+password
+salary
